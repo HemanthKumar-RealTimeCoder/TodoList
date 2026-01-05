@@ -1,0 +1,254 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+/* NAVBAR */
+#navbar {
+  height: 70px;
+  border: 1px solid black;
+}
+
+#navi {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 20px 50px;
+  gap: 30px;
+}
+#navi>h1{
+  color:  darkmagenta;
+  position: relative;
+  right: 650px;
+  padding: 0;
+  margin: 0;
+}
+
+#navi section {
+  border: 1px solid black;
+  background: #d57ad5;
+  padding: 7px;
+  border-radius: 8px;
+  transition-duration: 0.3s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+#navi section:hover {
+  transform: scale(1.1);
+}
+
+/* MAIN CONTAINER */
+#maincontainer {
+  /* border: 1px solid black; */
+  height: 150vh;
+  background-color: darkmagenta;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*REG-LOG-Con*/
+.registercon1{
+  color:indigo;
+  width: 500px;
+  box-shadow: 5px 4px 10px rgba(0, 0, 0, 1.5);
+  position: relative;
+  left: 10px;
+  top:60px;
+  display: grid;
+  place-items: center;
+  border-radius:3%;
+  background-color: rgb(212, 138, 219);
+  animation: fadeSlide 0.8s ease-out forwards;
+  transition: 0.3s ease;
+
+}
+  @keyframes fadeSlide {
+  from {
+  opacity: 0;
+  transform: translateY(40px);
+  }
+  to {
+  opacity: 1;
+  transform: translateY(0);
+  } 
+}
+.registercon1 input, select {
+  width: 100%;
+  padding: 5px 5px;
+  background: #d931d634;        
+  border: 1px solid #1e293b;  
+  border-radius: 10px;  
+  color: black;
+  outline: none;    
+  transition: opacity 0.3s ease;          
+  transition: 0.2s ease; 
+  }
+
+.registercon1 input:focus,select:focus {
+    border-color: #6d28d9;      
+    color:indigo;
+    text-align: center;
+    box-shadow:0 0 0 3px rgba(109, 40, 217, 0.4);
+                     
+  }
+ .fields{
+      display: flex;
+      flex-direction: column;
+      justify-content:space-evenly;
+      /* position: relative;
+      left:400px */
+  }
+ .fields>select{
+          padding-bottom: 5px;
+          text-align: center;
+  } 
+  .fields label,input{
+      margin-bottom: 10px;
+  }
+   #reg{
+   width:200px;
+   transform: translateY(30px);
+   }
+  #reg>h2{
+          width:300px;
+          text-align: center;
+          transform: translateX(-30px);
+      }
+  .fields>#sub{
+      width: 150px;
+      position: relative;
+      left: 25px;
+      top:20px;
+      padding: 10px 25px;
+      border: none;
+      background: plum;
+      color: #fff;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: 0.3s ease;
+      }
+  #reg>input{
+          border-radius: 5px;
+          border: 1px solid black;
+      }
+  #reg>select {
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      border-radius: 10px;
+      }
+.fields>#sub:hover {
+          background: #d57ad5; 
+          transform: scale(1.01);
+        }
+/* Login container */
+#login {
+  width: 200px;
+  transform: translateY(30px);
+  display: flex;
+  flex-direction:row;
+}
+
+#login h2 {
+  width: 300px;
+  text-align: center;
+  transform: translateX(-50px);
+}
+
+#login input {
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+#login select {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border-radius: 10px;
+}
+
+#login #log {
+  width: 150px;
+  position: relative;
+  left: 25px;
+  top: 20px;
+  padding: 10px 25px;
+  border: none;
+  background: plum;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#login #log:hover {
+  background: #d57ad5;
+  transform: scale(1.01);
+}
+
+/*dummy con*/
+.registercon {
+  height: 350px;
+  width: 500px;
+  border: 1px solid black;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 1.5);
+  background-color: rgb(212, 138, 219);
+  position: relative;
+  right: 450px;
+  border-radius: 3%;
+  transition: 0.3s;
+  animation: fadeSlide 0.8s ease-out forwards;
+}
+ @keyframes fadeSlide {
+        from {
+        opacity: 0;
+        transform: translateY(40px);
+        }
+        to {
+        opacity: 1;
+        transform: translateY(0);
+        } 
+ }
+
+.registercon section {
+  position: relative;
+  top: 70px;
+}
+
+.registercon section h1 {
+  text-align: center;
+  color: indigo;
+}
+
+.registercon section p {
+  font-size: medium;
+  text-align: center;
+  color: darkblue;
+}
+
+#bt {
+  padding: 10px 25px;
+  border: none;
+  background: plum;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  position: relative;
+  left: 350px;
+  bottom: 45px;
+}
+
+#bt:hover {
+  background: #d57ad5;
+  transform: scale(1.05);
+}
+#regg{
+  position: relative;
+  top: -500px;
+  right: 250px;
+}
+.fields>select{
+  color:indigo;
+}
+

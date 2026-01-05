@@ -1,0 +1,71 @@
+#todocon{
+    height: 120vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   background-color: rgb(212, 138, 219);
+    position: relative;
+    bottom: 50px;
+}
+#todo{
+    width: 400px;
+    height: 400px;
+  background-color: rgb(212, 138, 219);
+    border-radius: 15px;
+    position: relative;
+   right: 10px;
+}
+#hed{
+    position: relative;
+    left: 60px;
+}
+#field{
+    position: relative;
+    left: 40px;
+}
+h1{
+    color:indigo;
+}
+.in{
+    margin-left: 45px;
+    border-radius: 15px;
+    padding: 5px 5px;
+    background: rgb(250, 157, 242);        
+    border: 1px solid #1e293b;  
+    border-radius: 10px;  
+    color: black;
+    outline: none;    
+    transition: opacity 0.3s ease;  
+   
+} 
+.bt{
+    margin-left: 30px;
+    border-radius: 15px;
+    position: relative;
+    left: -15px;
+    padding: 7px 7px;
+    border: none;
+    background-color:rgb(193, 18, 179);
+    color:indigo;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.bt:hover{
+    background: magenta; 
+    transform: scale(1.01);
+}
+#tab{
+    margin-top:30px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin-left: 20px;
+    background: rgb(225, 193, 225);
+}
+.trr{
+    border: 1px solid white;
+    padding: 8px 10px ;
+    
+}
